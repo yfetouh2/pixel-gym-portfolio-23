@@ -5,19 +5,17 @@ interface Experience {
   company: string;
   role: string;
   period: string;
-  description: string;
   achievements: string[];
   tech: string[];
 }
 
 const experiences: Experience[] = [
   {
-    company: "TechGym Corp",
-    role: "Senior Full-Stack Developer",
-    period: "2022 - Present",
-    description: "Leading development of enterprise fitness platforms serving millions of users.",
+    company: "Department Of National Defense",
+    role: "Student Programmer",
+    period: "September 2023 - April 2024",
     achievements: [
-      "Reduced API response time by 60% through optimization",
+      "Developed a Cybersecurity tool called Security Onion on a virtual machine to monitor network traffic",
       "Led team of 5 developers on microservices migration",
       "Implemented real-time features using WebSockets",
     ],
@@ -27,9 +25,8 @@ const experiences: Experience[] = [
     company: "StartupFlex",
     role: "Full-Stack Developer",
     period: "2020 - 2022",
-    description: "Built and scaled a B2B SaaS platform from 0 to 10k users.",
     achievements: [
-      "Designed and implemented core product architecture",
+      "Designed and imple",
       "Built CI/CD pipeline reducing deployment time by 80%",
       "Mentored 3 junior developers",
     ],
@@ -39,7 +36,6 @@ const experiences: Experience[] = [
     company: "CodeForge Agency",
     role: "Frontend Developer",
     period: "2018 - 2020",
-    description: "Developed responsive web applications for diverse clients.",
     achievements: [
       "Delivered 20+ client projects on time and budget",
       "Improved site performance scores by average of 40%",
@@ -59,9 +55,7 @@ export function ExperienceSection() {
             EXPERIENCE
             <span className="text-accent">/&gt;</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">
-            // Career gains timeline 📈
-          </p>
+          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">// Career gains timeline 📈</p>
         </ScrollReveal>
 
         <div className="relative">
@@ -75,16 +69,14 @@ export function ExperienceSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className={`relative mb-12 md:w-1/2 ${
-                index % 2 === 0 ? "md:pr-12" : "md:ml-auto md:pl-12"
-              }`}
+              className={`relative mb-12 md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:ml-auto md:pl-12"}`}
             >
               {/* Timeline dot */}
               <motion.div
                 className="absolute left-0 md:left-auto top-0 w-4 h-4 bg-primary border-4 border-background md:-translate-x-1/2"
-                style={{ 
+                style={{
                   [index % 2 === 0 ? "right" : "left"]: "-8px",
-                  ...(index % 2 !== 0 && { left: "-8px" })
+                  ...(index % 2 !== 0 && { left: "-8px" }),
                 }}
                 whileInView={{ scale: [0, 1.2, 1] }}
                 viewport={{ once: true }}
@@ -97,16 +89,10 @@ export function ExperienceSection() {
                   {exp.period}
                 </div>
 
-                <h3 className="font-pixel text-sm text-primary mb-1">
-                  {exp.role}
-                </h3>
-                <p className="text-muted-foreground font-semibold mb-3">
-                  @ {exp.company}
-                </p>
+                <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
+                <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
 
-                <p className="text-muted-foreground text-sm mb-4">
-                  {exp.description}
-                </p>
+                <p className="text-muted-foreground text-sm mb-4">{exp.description}</p>
 
                 {/* Achievements */}
                 <ul className="space-y-2 mb-4">
@@ -128,10 +114,7 @@ export function ExperienceSection() {
                 {/* Tech stack */}
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
                   {exp.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-secondary text-xs font-mono"
-                    >
+                    <span key={tech} className="px-2 py-1 bg-secondary text-xs font-mono">
                       {tech}
                     </span>
                   ))}
