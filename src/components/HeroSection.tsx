@@ -92,11 +92,23 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
-            <img 
-              src={profilePhoto} 
-              alt="Profile photo" 
-              className="w-full h-full object-cover rounded-lg pixel-border"
-            />
+            <motion.div
+              className="w-full h-full rounded-full overflow-hidden border-4 border-primary shadow-2xl"
+              animate={{ 
+                boxShadow: [
+                  "0 0 20px hsl(var(--primary) / 0.3)",
+                  "0 0 40px hsl(var(--primary) / 0.6)",
+                  "0 0 20px hsl(var(--primary) / 0.3)"
+                ]
+              }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <img 
+                src={profilePhoto} 
+                alt="Profile photo" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
             {/* Rep Badge */}
             <motion.div
               className="absolute -top-4 -right-4 bg-gym-gold text-foreground font-pixel text-xs px-3 py-2 pixel-border"
