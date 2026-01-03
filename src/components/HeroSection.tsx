@@ -44,12 +44,10 @@ export function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow">
-            <span className="text-foreground">YOUSSEF </span>
-            <span className="text-primary">ABOU EL</span>
+          <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow text-foreground">
+            YOUSSEF ABOU EL
             <br />
-            <span className="text-foreground">FETOUH</span>
-            <span className="text-accent"> 💪</span>
+            FETOUH 💪
           </h1>
 
           <div className="mb-8 overflow-hidden">
