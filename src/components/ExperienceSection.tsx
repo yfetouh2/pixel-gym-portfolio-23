@@ -38,8 +38,8 @@ const experiences: Experience[] = [
     tech: ["Vue.js", "Python", "MongoDB", "Docker"],
   },
   {
-    company: "CodeForge Agency",
-    role: "Frontend Developer",
+    company: "Tim Hortons",
+    role: "Restaurant Team member",
     period: "2018 - 2020",
     achievements: [
       "Delivered 20+ client projects on time and budget",
