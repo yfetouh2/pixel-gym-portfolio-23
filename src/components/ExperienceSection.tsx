@@ -102,7 +102,11 @@ export function ExperienceSection() {
                 <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
                 <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
 
-                <img src={exp.logo} alt={exp.company} style={{ width: 100, height: 100 }} />
+                <img
+                  src={exp.logo}
+                  alt={exp.company}
+                  style={{ width: 100, height: 100, position: "absolute", top: "10px", left: "10px" }}
+                />
 
                 {/* Achievements */}
                 <ul className="space-y-2 mb-4">
