@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { PixelAvatar } from "./PixelIcons";
 import { ChevronDown } from "lucide-react";
 import heroBackground from "@/assets/hero-background.avif";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 export function HeroSection() {
   return (
@@ -92,7 +92,11 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
-            <PixelAvatar className="w-full h-full" />
+            <img 
+              src={profilePhoto} 
+              alt="Profile photo" 
+              className="w-full h-full object-cover rounded-lg pixel-border"
+            />
             {/* Rep Badge */}
             <motion.div
               className="absolute -top-4 -right-4 bg-gym-gold text-foreground font-pixel text-xs px-3 py-2 pixel-border"
