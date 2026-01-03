@@ -22,7 +22,7 @@ export function AboutSection() {
           <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">// Building strength in code...</p>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-2xl mx-auto">
           {/* Bio */}
           <ScrollReveal direction="left">
             <div className="pixel-card">
