@@ -44,14 +44,6 @@ export function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            className="inline-block mb-4 px-4 py-2 bg-primary/10 border-2 border-primary text-primary font-pixel text-xs"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.3, type: "spring" }}
-          >
-            FULL STACK ATHLETE
-          </motion.div>
 
           <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow">
             <span className="text-foreground">LIFTING </span>
