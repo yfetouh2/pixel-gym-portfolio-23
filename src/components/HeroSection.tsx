@@ -93,7 +93,7 @@ export function HeroSection() {
         >
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
             <motion.div
-              className="w-full h-full rounded-full overflow-hidden pixel-border"
+              className="w-full h-full rounded-full overflow-hidden border-4 border-foreground"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
