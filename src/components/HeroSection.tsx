@@ -67,8 +67,11 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <motion.a
               href="#projects"
+              
               className="pixel-btn bg-primary text-primary-foreground"
+              
               whileHover={{ scale: 1.02 }}
+              
               whileTap={{ scale: 0.98 }}
             >
               VIEW PROJECTS
@@ -85,12 +88,7 @@ export function HeroSection() {
         </motion.div>
 
         {/* Pixel Avatar */}
-        <motion.div
-          className="flex-1 flex justify-center"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
+        
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
             <motion.div
               className="w-full h-full rounded-full overflow-hidden border-4 border-foreground"
