@@ -51,6 +51,7 @@ const experiences: Experience[] = [
       "Identified opportunities to perform different solutions to increase customer satisfaction",
     ],
     tech: ["React", "TypeScript", "SCSS", "GraphQL"],
+    logo: Tim,
   },
 ];
 
@@ -100,6 +101,8 @@ export function ExperienceSection() {
 
                 <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
                 <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
+
+                <img src={exp.logo} alt={exp.company} />
 
                 {/* Achievements */}
                 <ul className="space-y-2 mb-4">
