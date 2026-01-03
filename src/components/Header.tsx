@@ -20,7 +20,7 @@ export function Header() {
         </motion.div>
 
         <nav className="hidden md:flex items-center gap-6">
-          {["About", "Skills", "Projects", "Experience", "Contact"].map((item) => (
+          {["About", "Projects", "Experience", "Contact"].map((item) => (
             <motion.a
               key={item}
               href={`#${item.toLowerCase()}`}
