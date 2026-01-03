@@ -7,12 +7,12 @@ export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
       <div className="absolute inset-0 bg-background/40" />
-      
+
       {/* Floating decorative elements */}
       <motion.div
         className="absolute top-1/4 left-10 text-6xl opacity-20"
@@ -44,7 +44,6 @@ export function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-
           <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow">
             <span className="text-foreground">LIFTING </span>
             <span className="text-primary">CODE</span>
@@ -67,11 +66,8 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <motion.a
               href="#projects"
-              
               className="pixel-btn bg-primary text-primary-foreground"
-              
               whileHover={{ scale: 1.02 }}
-              
               whileTap={{ scale: 0.98 }}
             >
               VIEW PROJECTS
@@ -88,18 +84,20 @@ export function HeroSection() {
         </motion.div>
 
         {/* Pixel Avatar */}
-        
+
+        <motion.div
+          className="flex-1 flex justify-center"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
             <motion.div
               className="w-full h-full rounded-full overflow-hidden border-4 border-foreground"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
-              <img 
-                src={profilePhoto} 
-                alt="Profile photo" 
-                className="w-full h-full object-cover"
-              />
+              <img src={profilePhoto} alt="Profile photo" className="w-full h-full object-cover" />
             </motion.div>
             {/* Rep Badge */}
             <motion.div
