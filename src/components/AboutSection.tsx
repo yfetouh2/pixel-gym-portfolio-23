@@ -28,7 +28,7 @@ export function AboutSection() {
             <div className="pixel-card">
               <div className="flex items-center gap-3 mb-6">
                 <PixelIcon icon="dumbbell" className="text-primary" animate />
-                <h3 className="font-pixel text-sm text-primary">BIO</h3>
+                <h3 className="font-pixel text-sm text-primary">BIO.exe</h3>
               </div>
 
               <p className="text-muted-foreground mb-4 leading-relaxed">
@@ -58,29 +58,6 @@ export function AboutSection() {
                   ))}
                 </div>
               </div>
-            </div>
-          </ScrollReveal>
-
-          {/* Stats Grid */}
-          <ScrollReveal direction="right">
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  className="pixel-card text-center"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <PixelIcon icon={stat.icon} size="lg" className="text-accent mx-auto mb-3" />
-                  <div className="font-pixel text-2xl sm:text-3xl text-primary mb-2">
-                    <AnimatedCounter end={stat.value} suffix={stat.suffix} />
-                  </div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-wider">{stat.label}</div>
-                </motion.div>
-              ))}
             </div>
           </ScrollReveal>
         </div>
