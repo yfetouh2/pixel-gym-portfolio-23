@@ -4,8 +4,11 @@ import { ScrollReveal } from "./ScrollReveal";
 interface Experience {
   company: string;
   role: string;
+
   period: string;
+
   achievements: string[];
+
   tech: string[];
 }
 
@@ -16,8 +19,9 @@ const experiences: Experience[] = [
     period: "September 2023 - April 2024",
     achievements: [
       "Developed a Cybersecurity tool called Security Onion on a virtual machine to monitor network traffic",
-      "Led team of 5 developers on microservices migration",
-      "Implemented real-time features using WebSockets",
+      "Set up Ansible on a virtual machine to be able to complete automation tasks like being able to create dockercontainers within a playbook",
+      "Worked with Cisco Embedded Event Manager to change an Ip Address of the internet default gateway andinterface of a router.",
+      "Used Wireshark in the SANS Holiday Hack Challenge to view the content of a suspicious activity and to identifya series of network traffic",
     ],
     tech: ["React", "Node.js", "PostgreSQL", "AWS"],
   },
