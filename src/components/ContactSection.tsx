@@ -35,7 +35,7 @@ export function ContactSection() {
             <span className="text-accent">/&gt;</span>
           </h2>
           <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">
-            // Let's build something strong together 💪
+            // Let's train together 🏋️
           </p>
         </ScrollReveal>
 

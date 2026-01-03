@@ -26,7 +26,7 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            © {currentYear} DevGym Portfolio. All gains reserved.
+            © {currentYear} Code Gym Portfolio. All gains reserved.
           </motion.p>
 
           <motion.div
