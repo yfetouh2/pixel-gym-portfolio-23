@@ -45,9 +45,9 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow text-foreground">
-            YOUSSEF ABOU EL
+            YOUSSEF
             <br />
-            FETOUH 💪
+            ABOU EL FETOUH 💪
           </h1>
 
           <div className="mb-8 overflow-hidden">
