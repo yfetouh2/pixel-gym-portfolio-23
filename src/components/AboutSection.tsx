@@ -24,7 +24,7 @@ export function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Bio */}
-          <ScrollReveal direction="center">
+          <ScrollReveal direction="left">
             <div className="pixel-card">
               <div className="flex items-center gap-3 mb-6">
                 <PixelIcon icon="dumbbell" className="text-primary" animate />
