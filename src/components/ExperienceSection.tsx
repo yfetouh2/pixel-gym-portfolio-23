@@ -3,6 +3,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 interface Experience {
   company: string;
+
   role: string;
 
   period: string;
@@ -10,6 +11,8 @@ interface Experience {
   achievements: string[];
 
   tech: string[];
+
+  companyImage: const;
 }
 
 const experiences: Experience[] = [
@@ -38,13 +41,13 @@ const experiences: Experience[] = [
     tech: ["Vue.js", "Python", "MongoDB", "Docker"],
   },
   {
-    company: "Tim Hortons",
-    role: "Restaurant Team Member",
-    period: "February 2021 - September 2021",
+    company: "CodeForge Agency",
+    role: "Frontend Developer",
+    period: "2018 - 2020",
     achievements: [
-      "Delivered outstanding customer service by offering daily specials and contributed to collaborative teamenvironment",
-      "Utilized strong communication skills to build a good relationship with customers and colleagues to ensure awelcoming environment",
-      "Identified opportunities to perform different solutions to increase customer satisfaction",
+      "Delivered 20+ client projects on time and budget",
+      "Improved site performance scores by average of 40%",
+      "Created reusable component library",
     ],
     tech: ["React", "TypeScript", "SCSS", "GraphQL"],
   },
@@ -95,8 +98,7 @@ export function ExperienceSection() {
                 </div>
 
                 <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
-
-                <p className="text-muted-foreground font-semibold mb-3">{exp.company}</p>
+                <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
 
                 <p className="text-muted-foreground text-sm mb-4">{exp.description}</p>
 
@@ -112,7 +114,6 @@ export function ExperienceSection() {
                       className="flex items-start gap-2 text-sm"
                     >
                       <span className="text-accent mt-1">▸</span>
-
                       <span className="text-muted-foreground">{achievement}</span>
                     </motion.li>
                   ))}
