@@ -28,7 +28,7 @@ export function AboutSection() {
             <div className="pixel-card">
               <div className="flex items-center gap-3 mb-6">
                 <PixelIcon icon="dumbbell" className="text-primary" animate />
-                <h3 className="font-pixel text-sm text-primary">BIO.exe</h3>
+                <h3 className="font-pixel text-sm text-primary">BIO</h3>
               </div>
 
               <p className="text-muted-foreground mb-4 leading-relaxed">
