@@ -115,7 +115,7 @@ export function ExperienceSection() {
                       <img
                         src={exp.logo}
                         alt={exp.company}
-                        style={{ width: 100, height: 100, position: "absolute", top: "-50px", right: "30px" }}
+                        style={{ width: 100, height: 100, position: "absolute", top: "-70px", right: "30px" }}
                       />
                     </motion.div>
                   </div>
