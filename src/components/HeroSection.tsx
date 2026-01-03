@@ -36,7 +36,7 @@ export function HeroSection() {
         🔥
       </motion.div>
 
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Text Content */}
         <motion.div
           className="flex-1 text-center lg:text-left"
