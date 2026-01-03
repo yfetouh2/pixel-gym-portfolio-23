@@ -45,10 +45,10 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow">
-            <span className="text-foreground">LIFTING </span>
-            <span className="text-primary">CODE</span>
+            <span className="text-foreground">YOUSSEF </span>
+            <span className="text-primary">ABOU EL</span>
             <br />
-            <span className="text-foreground">DAILY</span>
+            <span className="text-foreground">FETOUH</span>
             <span className="text-accent"> 💪</span>
           </h1>
 
