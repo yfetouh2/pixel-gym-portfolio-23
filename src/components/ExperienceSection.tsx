@@ -23,7 +23,7 @@ const experiences: Experience[] = [
       "Worked with Cisco Embedded Event Manager to change an Ip Address of the internet default gateway andinterface of a router.",
       "Used Wireshark in the SANS Holiday Hack Challenge to view the content of a suspicious activity and to identifya series of network traffic",
     ],
-    tech: ["React", "Node.js", "PostgreSQL", "AWS"],
+    tech: ["Ansible", "Docker", "Wireshark", "Security Onion"],
   },
   {
     company: "StartupFlex",
