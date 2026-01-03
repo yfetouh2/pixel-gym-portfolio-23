@@ -15,8 +15,8 @@ export function Header() {
           className="font-pixel text-xs sm:text-sm text-primary"
           whileHover={{ scale: 1.05 }}
         >
-          <span className="hidden sm:inline">&lt;DEV_GYM/&gt;</span>
-          <span className="sm:hidden">&lt;/&gt;</span>
+          <span className="hidden sm:inline">CODE_GYM 🏋️</span>
+          <span className="sm:hidden">🏋️</span>
         </motion.div>
 
         <nav className="hidden md:flex items-center gap-6">

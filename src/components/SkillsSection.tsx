@@ -42,7 +42,7 @@ function SkillBar({ skill, index }: { skill: Skill; index: number }) {
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm font-medium">{skill.name}</span>
         <span className="font-pixel text-xs text-muted-foreground">
-          LVL {skill.level}
+          {skill.level}%
         </span>
       </div>
       <div className="progress-bar-gym">
@@ -77,7 +77,7 @@ export function SkillsSection() {
             <span className="text-accent">/&gt;</span>
           </h2>
           <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">
-            // Strength levels unlocked 💪
+            // Strength levels trained 💪
           </p>
         </ScrollReveal>
 
@@ -108,9 +108,9 @@ export function SkillsSection() {
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             {[
               { emoji: "🏆", label: "Clean Code Champion" },
-              { emoji: "⚡", label: "Speed Optimizer" },
-              { emoji: "🐛", label: "Bug Crusher" },
-              { emoji: "📚", label: "Docs Writer" },
+              { emoji: "🏋️", label: "Heavy Lifter" },
+              { emoji: "🔥", label: "Bug Crusher" },
+              { emoji: "💪", label: "Code Athlete" },
             ].map((badge) => (
               <motion.div
                 key={badge.label}

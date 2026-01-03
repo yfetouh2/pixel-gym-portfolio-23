@@ -3,10 +3,10 @@ import { ScrollReveal, AnimatedCounter } from "./ScrollReveal";
 import { PixelIcon } from "./PixelIcons";
 
 const stats = [
-  { label: "Years XP", value: 5, icon: "trophy" as const },
-  { label: "Projects", value: 50, suffix: "+", icon: "code" as const },
-  { label: "Commits", value: 2000, suffix: "+", icon: "lightning" as const },
-  { label: "PRs Merged", value: 300, suffix: "+", icon: "star" as const },
+  { label: "Years Training", value: 5, icon: "trophy" as const },
+  { label: "Projects Built", value: 50, suffix: "+", icon: "code" as const },
+  { label: "Total Commits", value: 2000, suffix: "+", icon: "lightning" as const },
+  { label: "PRs Merged", value: 300, suffix: "+", icon: "dumbbell" as const },
 ];
 
 export function AboutSection() {
@@ -20,7 +20,7 @@ export function AboutSection() {
             <span className="text-primary">/&gt;</span>
           </h2>
           <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">
-            // Loading developer stats...
+            // Building strength in code...
           </p>
         </ScrollReveal>
 
