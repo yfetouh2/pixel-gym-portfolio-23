@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { PixelAvatar } from "./PixelIcons";
 import { ChevronDown } from "lucide-react";
+import heroBackground from "@/assets/hero-background.avif";
 
 export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background grid pattern */}
-      <div className="absolute inset-0 retro-scanlines pointer-events-none" />
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      <div className="absolute inset-0 bg-background/70" />
       
       {/* Floating decorative elements */}
       <motion.div
