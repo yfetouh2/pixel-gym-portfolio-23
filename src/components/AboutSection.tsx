@@ -19,7 +19,6 @@ export function AboutSection() {
             ABOUT_ME
             <span className="text-primary">/&gt;</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">// Building strength in code...</p>
         </ScrollReveal>
 
         <div className="max-w-2xl mx-auto">
