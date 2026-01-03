@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
+import Dnd from "@/assets/department-of-national-defence.png";
+import Tim from "@/assets/tim-hortons.png";
+import CAF from "@/assets/canadian-army.jpg";
 
 interface Experience {
   company: string;
@@ -93,8 +96,6 @@ export function ExperienceSection() {
 
                 <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
                 <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
-
-                
 
                 {/* Achievements */}
                 <ul className="space-y-2 mb-4">
