@@ -93,15 +93,9 @@ export function HeroSection() {
         >
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
             <motion.div
-              className="w-full h-full rounded-full overflow-hidden border-4 border-primary shadow-2xl"
-              animate={{ 
-                boxShadow: [
-                  "0 0 20px hsl(var(--primary) / 0.3)",
-                  "0 0 40px hsl(var(--primary) / 0.6)",
-                  "0 0 20px hsl(var(--primary) / 0.3)"
-                ]
-              }}
-              transition={{ duration: 2, repeat: Infinity }}
+              className="w-full h-full rounded-full overflow-hidden pixel-border"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
               <img 
                 src={profilePhoto} 
