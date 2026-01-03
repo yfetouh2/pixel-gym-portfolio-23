@@ -10,6 +10,7 @@ interface Experience {
   period: string;
   achievements: string[];
   tech: string[];
+  logo: string;
 }
 
 const experiences: Experience[] = [
@@ -24,6 +25,8 @@ const experiences: Experience[] = [
       "Used Wireshark in the SANS Holiday Hack Challenge to view the content of a suspicious activity and to identifya series of network traffic",
     ],
     tech: ["Ansible", "Docker", "Wireshark", "Security Onion"],
+
+    logo: Dnd,
   },
   {
     company: "Canadian Armed Forces",
@@ -36,6 +39,7 @@ const experiences: Experience[] = [
       "Maintained weapons and equipment as an infantry soldier to ensure readiness and effectiveness for upcoming exercises in the field.",
     ],
     tech: ["Vue.js", "Python", "MongoDB", "Docker"],
+    logo: CAF,
   },
   {
     company: "CodeForge Agency",
