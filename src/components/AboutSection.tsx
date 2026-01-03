@@ -19,6 +19,7 @@ export function AboutSection() {
             ABOUT_ME
             <span className="text-primary">/&gt;</span>
           </h2>
+          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">// Building strength in code...</p>
         </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -27,7 +28,7 @@ export function AboutSection() {
             <div className="pixel-card">
               <div className="flex items-center gap-3 mb-6">
                 <PixelIcon icon="dumbbell" className="text-primary" animate />
-                <h3 className="font-pixel text-sm text-primary">BIO.exe</h3>
+                <h3 className="font-pixel text-sm text-primary">BIO</h3>
               </div>
 
               <p className="text-muted-foreground mb-4 leading-relaxed">
