@@ -42,19 +42,6 @@ export function AboutSection() {
                 I believe in clean code, continuous improvement, and the power of
                 <span className="text-primary font-semibold"> caffeine + determination</span>.
               </p>
-
-              <div className="mt-6 pt-6 border-t border-border">
-                <div className="flex flex-wrap gap-2">
-                  {["React", "TypeScript", "Node.js", "Python", "AWS"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-primary/10 text-primary text-xs font-mono border border-primary/30"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           </ScrollReveal>
         </div>
