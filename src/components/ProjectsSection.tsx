@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
 import { ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 interface Project {
   title: string;
@@ -65,8 +66,15 @@ const projects: Project[] = [
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
+  const [selectedProject, setSelectedProject] = useState<false>;
+
+  const toggleModal = () => {
+    selectedProject(!selectedProject);
+  };
+
   return (
     <motion.div
+      onClick={toggleModal}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -125,6 +133,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             Live
           </motion.a>
         )}
+      </div>
+
+      <div className="modal">
+        <div className="overlay"></div>
+        <div className="modal-content">
+          <h2> hello </h2>
+          <p> ncjnfcfbhvcfvchfvchfcvfhvhfvcfhcvf</p>
+        </div>
       </div>
     </motion.div>
   );
