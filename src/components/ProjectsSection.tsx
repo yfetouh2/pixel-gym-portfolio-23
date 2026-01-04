@@ -16,8 +16,9 @@ const projects: Project[] = [
   {
     title: "FitnessHun",
     description:
-      "A comprehensive fitness tracking app with workout planning,food logging tracker, and TDEE Calculator(Total Daily Energy Expenditure.",
+      "A comprehensive fitness tracking app with workout planning, food logging tracker, and TDEE Calculator (Total Daily Energy Expenditure).",
     image: "🏋️",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
     github: "#",
     live: "#",
     featured: true,
@@ -91,7 +92,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 mb-4">
-        {project.tech.map((tech) => (
+        {project.tech?.map((tech) => (
           <span key={tech} className="px-2 py-1 bg-secondary text-xs font-mono text-muted-foreground">
             {tech}
           </span>
