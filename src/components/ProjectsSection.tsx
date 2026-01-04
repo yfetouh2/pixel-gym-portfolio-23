@@ -136,17 +136,6 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       </div>
     </motion.div>
   );
-  <div className="modal">
-    <div className="overlay"></div>
-    <div className="modal-content">
-      <h2> hello </h2>
-      <p> ncjnfcfbhvcfvchfvchfcvfhvhfvcfhcvf</p>
-      <button className="btn-close-modal" onClick={toggleModal}>
-        {" "}
-        CLOSE
-      </button>
-    </div>
-  </div>;
 }
 
 export function ProjectsSection() {
