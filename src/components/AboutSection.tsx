@@ -38,11 +38,6 @@ export function AboutSection() {
                 routine – consistent and intense.
               </p>
 
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                I specialize in building scalable web applications with modern technologies. When I'm not crushing bugs,
-                you'll find me crushing actual weights at the gym.
-              </p>
-
               <p className="text-muted-foreground leading-relaxed">
                 I believe in clean code, continuous improvement, and the power of
                 <span className="text-primary font-semibold"> caffeine + determination</span>.
