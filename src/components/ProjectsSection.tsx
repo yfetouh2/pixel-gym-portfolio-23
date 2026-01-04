@@ -187,56 +187,12 @@ export function ProjectsSection() {
 
       {/* Project Modal */}
       <Dialog open={!!selectedProject} onOpenChange={(open) => !open && setSelectedProject(null)}>
-        <DialogContent className="sm:max-w-lg">
-          <DialogHeader>
-            <div className="text-6xl mb-4">{selectedProject?.image}</div>
-            <DialogTitle className="font-pixel text-lg text-primary">
-              {selectedProject?.title}
-            </DialogTitle>
-            {selectedProject?.featured && (
-              <div className="inline-block w-fit px-2 py-1 bg-gym-gold/20 text-gym-gold font-pixel text-[10px] border border-gym-gold">
-                ⭐ FEATURED
-              </div>
-            )}
+        <DialogContent className="sm:max-w-lg flex flex-col justify-end min-h-[200px]">
+          <DialogHeader className="mt-auto">
+            <DialogDescription className="text-muted-foreground">
+              {selectedProject?.description}
+            </DialogDescription>
           </DialogHeader>
-          <DialogDescription className="text-muted-foreground">
-            {selectedProject?.description}
-          </DialogDescription>
-
-          {/* Tech Stack */}
-          <div className="flex flex-wrap gap-2 mt-4">
-            {selectedProject?.tech?.map((tech) => (
-              <span key={tech} className="px-2 py-1 bg-secondary text-xs font-mono text-muted-foreground">
-                {tech}
-              </span>
-            ))}
-          </div>
-
-          {/* Links */}
-          <div className="flex gap-4 mt-6 pt-4 border-t border-border">
-            {selectedProject?.github && (
-              <a
-                href={selectedProject.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-secondary text-sm text-foreground hover:bg-secondary/80 transition-colors"
-              >
-                <Github className="h-4 w-4" />
-                View Code
-              </a>
-            )}
-            {selectedProject?.live && (
-              <a
-                href={selectedProject.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm hover:bg-primary/90 transition-colors"
-              >
-                <ExternalLink className="h-4 w-4" />
-                Live Demo
-              </a>
-            )}
-          </div>
         </DialogContent>
       </Dialog>
     </section>
