@@ -66,10 +66,10 @@ const projects: Project[] = [
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const [selectedProject, setSelectedProject] = useState<false>;
+  const [selectedProject, setSelectedProject] = useState(false);
 
   const toggleModal = () => {
-    selectedProject(!selectedProject);
+    setSelectedProject(!selectedProject);
   };
 
   return (
