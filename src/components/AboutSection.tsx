@@ -34,9 +34,8 @@ export function AboutSection() {
                 Hey! My Name is Yousssef Abou El Fetouh and im from Egypt. I moved to Canada when I four years old and I
                 grew up playing soccer and developed a strong passion for video games, which I showcased through content
                 creation on my YouTube channel. Training at the gym is a passion of mine and it inspired a fitness
-                project I’ve developed and continues to drive my interest in building more.I'm a passionate full-stack
-                developer who treats coding like a workout routine – consistent, intense, and always pushing for that
-                next PR (Pull Request, obviously 😉).
+                project I’ve developed and continues to drive my interest in building more.I treat coding like a workout
+                routine – consistent and intense.
               </p>
 
               <p className="text-muted-foreground mb-4 leading-relaxed">
