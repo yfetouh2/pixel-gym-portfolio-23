@@ -15,7 +15,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "FitnessHun",
+    title: "FitnessHub",
     description:
       "A comprehensive fitness tracking app with workout planning, food logging tracker, and TDEE Calculator (Total Daily Energy Expenditure).",
     image: "🏋️",
@@ -66,15 +66,8 @@ const projects: Project[] = [
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const [selectedProject, setSelectedProject] = useState(false);
-
-  const toggleModal = () => {
-    setSelectedProject(!selectedProject);
-  };
-
   return (
     <motion.div
-      onClick={toggleModal}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
