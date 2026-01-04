@@ -14,10 +14,10 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "FitTrack Pro",
-    description: "A comprehensive fitness tracking app with workout planning, progress analytics, and social features.",
+    title: "FitnessHun",
+    description:
+      "A comprehensive fitness tracking app with workout planning,food logging tracker, and TDEE Calculator(Total Daily Energy Expenditure.",
     image: "🏋️",
-    tech: ["React", "Node.js", "PostgreSQL", "Redis"],
     github: "#",
     live: "#",
     featured: true,
@@ -74,9 +74,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       className={`pixel-card group cursor-pointer ${project.featured ? "md:col-span-2 lg:col-span-1" : ""}`}
     >
       {/* Project Icon/Image */}
-      <div className="text-6xl mb-4 transition-transform group-hover:scale-110">
-        {project.image}
-      </div>
+      <div className="text-6xl mb-4 transition-transform group-hover:scale-110">{project.image}</div>
 
       {/* Featured badge */}
       {project.featured && (
@@ -86,22 +84,15 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       )}
 
       {/* Title */}
-      <h3 className="font-pixel text-sm mb-3 text-primary group-hover:neon-glow transition-all">
-        {project.title}
-      </h3>
+      <h3 className="font-pixel text-sm mb-3 text-primary group-hover:neon-glow transition-all">{project.title}</h3>
 
       {/* Description */}
-      <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-        {project.description}
-      </p>
+      <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{project.description}</p>
 
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 mb-4">
         {project.tech.map((tech) => (
-          <span
-            key={tech}
-            className="px-2 py-1 bg-secondary text-xs font-mono text-muted-foreground"
-          >
+          <span key={tech} className="px-2 py-1 bg-secondary text-xs font-mono text-muted-foreground">
             {tech}
           </span>
         ))}
