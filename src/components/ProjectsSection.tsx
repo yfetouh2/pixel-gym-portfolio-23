@@ -141,6 +141,10 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     <div className="modal-content">
       <h2> hello </h2>
       <p> ncjnfcfbhvcfvchfvchfcvfhvhfvcfhcvf</p>
+      <button className="btn-close-modal" onClick={toggleModal}>
+        {" "}
+        CLOSE
+      </button>
     </div>
   </div>;
 }
