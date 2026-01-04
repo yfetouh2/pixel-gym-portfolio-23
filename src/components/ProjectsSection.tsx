@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
 import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 interface Project {
   title: string;
@@ -65,7 +72,7 @@ const projects: Project[] = [
   },
 ];
 
-function ProjectCard({ project, index }: { project: Project; index: number }) {
+function ProjectCard({ project, index, onClick }: { project: Project; index: number; onClick: () => void }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -73,6 +80,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
       whileHover={{ y: -8 }}
+      onClick={onClick}
       className={`pixel-card group cursor-pointer ${project.featured ? "md:col-span-2 lg:col-span-1" : ""}`}
     >
       {/* Project Icon/Image */}
@@ -109,6 +117,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
             whileHover={{ scale: 1.05 }}
+            onClick={(e) => e.stopPropagation()}
           >
             <Github className="h-4 w-4" />
             Code
@@ -121,6 +130,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-sm text-muted-foreground hover:text-accent transition-colors"
             whileHover={{ scale: 1.05 }}
+            onClick={(e) => e.stopPropagation()}
           >
             <ExternalLink className="h-4 w-4" />
             Live
@@ -132,6 +142,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export function ProjectsSection() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
     <section id="projects" className="py-24">
       <div className="container mx-auto px-4">
@@ -148,7 +160,12 @@ export function ProjectsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={index}
+              onClick={() => setSelectedProject(project)}
+            />
           ))}
         </div>
 
@@ -167,6 +184,61 @@ export function ProjectsSection() {
           </div>
         </ScrollReveal>
       </div>
+
+      {/* Project Modal */}
+      <Dialog open={!!selectedProject} onOpenChange={(open) => !open && setSelectedProject(null)}>
+        <DialogContent className="sm:max-w-lg">
+          <DialogHeader>
+            <div className="text-6xl mb-4">{selectedProject?.image}</div>
+            <DialogTitle className="font-pixel text-lg text-primary">
+              {selectedProject?.title}
+            </DialogTitle>
+            {selectedProject?.featured && (
+              <div className="inline-block w-fit px-2 py-1 bg-gym-gold/20 text-gym-gold font-pixel text-[10px] border border-gym-gold">
+                ⭐ FEATURED
+              </div>
+            )}
+          </DialogHeader>
+          <DialogDescription className="text-muted-foreground">
+            {selectedProject?.description}
+          </DialogDescription>
+
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            {selectedProject?.tech?.map((tech) => (
+              <span key={tech} className="px-2 py-1 bg-secondary text-xs font-mono text-muted-foreground">
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          {/* Links */}
+          <div className="flex gap-4 mt-6 pt-4 border-t border-border">
+            {selectedProject?.github && (
+              <a
+                href={selectedProject.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-secondary text-sm text-foreground hover:bg-secondary/80 transition-colors"
+              >
+                <Github className="h-4 w-4" />
+                View Code
+              </a>
+            )}
+            {selectedProject?.live && (
+              <a
+                href={selectedProject.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm hover:bg-primary/90 transition-colors"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Live Demo
+              </a>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
