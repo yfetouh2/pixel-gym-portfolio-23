@@ -169,9 +169,7 @@ export function ProjectsSection() {
             PROJECTS
             <span className="text-primary">/&gt;</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">
-            // Reps completed: {projects.length} 🏆
-          </p>
+          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">🏆</p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
