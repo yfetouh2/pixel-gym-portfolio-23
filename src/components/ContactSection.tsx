@@ -125,6 +125,17 @@ export function ContactSection() {
                     </a>
                   </div>
                 </div>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-neon-blue/10 text-neon-blue">
+                    <Linkedin className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">LinkedIn</p>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-neon-blue transition-colors">
+                      linkedin.com/in/yourprofile
+                    </a>
+                  </div>
+                </div>
               </div>
 
               {/* Social Links */}
