@@ -53,8 +53,9 @@ const projects: Project[] = [
     images: [quickcash6, quickcash5, quickcash4, quickcash3, quickcash2, quickcash1],
   },
   {
-    title: "PixelQuest",
-    description: "Retro-style RPG game built with web technologies. Features procedural dungeon generation.",
+    title: "Star Wars Social Networking Website",
+    description:
+      "As a Star Wars fan, I was inspired to build a simple social networking website that allows users to connect and share their interests within a Star Wars–themed environment",
     image: "🎮",
     tech: ["TypeScript", "Canvas API", "Web Audio"],
     github: "#",
