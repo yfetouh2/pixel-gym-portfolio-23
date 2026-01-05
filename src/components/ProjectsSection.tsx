@@ -68,29 +68,6 @@ const projects: Project[] = [
     github: "#",
     images: [starwars1, starwars2, starwars3, starwars4, starwars5],
   },
-  {
-    title: "DevDash",
-    description: "Developer productivity dashboard integrating GitHub, Jira, and Slack into one unified view.",
-    image: "📊",
-    tech: ["React", "GraphQL", "OAuth2"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "NutritionAI",
-    description: "AI-powered meal planning and nutrition tracking with image recognition for food logging.",
-    image: "🥗",
-    tech: ["Python", "TensorFlow", "FastAPI", "React"],
-    github: "#",
-  },
-  {
-    title: "CloudSync",
-    description: "Cross-platform file synchronization tool with end-to-end encryption and conflict resolution.",
-    image: "☁️",
-    tech: ["Rust", "React", "AWS S3", "WebRTC"],
-    github: "#",
-    live: "#",
-  },
 ];
 
 function ProjectCard({ project, index, onClick }: { project: Project; index: number; onClick: () => void }) {
