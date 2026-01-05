@@ -1,23 +1,29 @@
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogDescription,
+} from "@/components/ui/dialog";
+
+// FitnessHub screenshots
+import fitnesshub1 from "@/assets/fitnesshub-1.png";
+import fitnesshub2 from "@/assets/fitnesshub-2.png";
+import fitnesshub3 from "@/assets/fitnesshub-3.png";
+import fitnesshub4 from "@/assets/fitnesshub-4.png";
 
 interface Project {
   title: string;
-
   description: string;
-
   image: string;
-
   tech: string[];
-
   github?: string;
-
   live?: string;
-
   featured?: boolean;
+  images?: string[];
 }
 
 const projects: Project[] = [
@@ -30,9 +36,10 @@ const projects: Project[] = [
     github: "#",
     live: "#",
     featured: true,
+    images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
   {
-    title: "QuickCash",
+    title: "CodeArena",
     description: "Real-time competitive coding platform with live battles, leaderboards, and skill-based matchmaking.",
     image: "⚔️",
     tech: ["Next.js", "WebSocket", "MongoDB", "Docker"],
@@ -41,7 +48,7 @@ const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Cheap Flights Website",
+    title: "PixelQuest",
     description: "Retro-style RPG game built with web technologies. Features procedural dungeon generation.",
     image: "🎮",
     tech: ["TypeScript", "Canvas API", "Web Audio"],
@@ -143,6 +150,28 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
 
 export function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setCurrentImageIndex(0);
+  };
+
+  const nextImage = () => {
+    if (selectedProject?.images) {
+      setCurrentImageIndex((prev) => 
+        prev === selectedProject.images!.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedProject?.images) {
+      setCurrentImageIndex((prev) => 
+        prev === 0 ? selectedProject.images!.length - 1 : prev - 1
+      );
+    }
+  };
 
   return (
     <section id="projects" className="py-24">
@@ -164,7 +193,7 @@ export function ProjectsSection() {
               key={project.title}
               project={project}
               index={index}
-              onClick={() => setSelectedProject(project)}
+              onClick={() => handleProjectClick(project)}
             />
           ))}
         </div>
@@ -187,9 +216,54 @@ export function ProjectsSection() {
 
       {/* Project Modal */}
       <Dialog open={!!selectedProject} onOpenChange={(open) => !open && setSelectedProject(null)}>
-        <DialogContent className="sm:max-w-lg flex flex-col justify-end min-h-[200px]">
-          <DialogHeader className="mt-auto">
-            <DialogDescription className="text-muted-foreground">{selectedProject?.description}</DialogDescription>
+        <DialogContent className="sm:max-w-lg flex flex-col min-h-[400px]">
+          {/* Image Carousel */}
+          {selectedProject?.images && selectedProject.images.length > 0 && (
+            <div className="relative flex-1 flex items-center justify-center">
+              <motion.img
+                key={currentImageIndex}
+                src={selectedProject.images[currentImageIndex]}
+                alt={`${selectedProject.title} screenshot ${currentImageIndex + 1}`}
+                className="max-h-[300px] w-auto rounded-lg object-contain"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.2 }}
+              />
+              
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevImage}
+                className="absolute left-0 top-1/2 -translate-y-1/2 p-2 bg-background/80 hover:bg-background border border-border rounded-full transition-colors"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                onClick={nextImage}
+                className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-background/80 hover:bg-background border border-border rounded-full transition-colors"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+              
+              {/* Dots indicator */}
+              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+                {selectedProject.images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentImageIndex(idx)}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      idx === currentImageIndex ? "bg-primary" : "bg-muted-foreground/30"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+          
+          <DialogHeader className="mt-auto pt-4 border-t border-border">
+            <DialogDescription className="text-muted-foreground">
+              {selectedProject?.description}
+            </DialogDescription>
           </DialogHeader>
         </DialogContent>
       </Dialog>
