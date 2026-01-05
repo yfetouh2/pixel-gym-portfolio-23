@@ -38,7 +38,7 @@ const experiences: Experience[] = [
       "Performed night patrols during nighttime in a field exercise to my team members to ensure safety and security.",
       "Maintained weapons and equipment as an infantry soldier to ensure readiness and effectiveness for upcoming exercises in the field.",
     ],
-    tech: ["Vue.js", "Python", "MongoDB", "Docker"],
+    tech: [],
     logo: CAF,
   },
   {
@@ -50,7 +50,7 @@ const experiences: Experience[] = [
       "Utilized strong communication skills to build a good relationship with customers and colleagues to ensure awelcoming environment",
       "Identified opportunities to perform different solutions to increase customer satisfaction",
     ],
-    tech: ["React", "TypeScript", "SCSS", "GraphQL"],
+    tech: [],
     logo: Tim,
   },
 ];
