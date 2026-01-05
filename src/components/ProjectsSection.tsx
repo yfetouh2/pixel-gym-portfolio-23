@@ -52,7 +52,7 @@ const projects: Project[] = [
     title: "QuickCash",
     description:
       "mobile application as a team for users to find small paid work in their local area. The application allows users to sign in as an employer or employee. The application include several key factors like being able to identify the local area of the user (Google Map API) and integrating an online payment system (PayPal)",
-    image: "⚔️",
+    image: "💵",
     tech: ["Java", "Android Studio", "XML"],
     github: "#",
     live: "#",
@@ -63,7 +63,7 @@ const projects: Project[] = [
     title: "Star Wars Social Networking Website",
     description:
       "As a Star Wars fan, I was inspired to build a simple social networking website that allows users to connect and share their interests within a Star Wars–themed environment",
-    image: "🎮",
+    image: "🔫",
     tech: ["TypeScript", "Canvas API", "Web Audio"],
     github: "#",
     images: [starwars1, starwars2, starwars3, starwars4, starwars5],
