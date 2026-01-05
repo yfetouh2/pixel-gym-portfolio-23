@@ -20,7 +20,12 @@ export function ContactSection() {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-foreground" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-neon-blue" },
+    {
+      icon: Linkedin,
+      href: "www.linkedin.com/in/youssef-abou-el-fetouh-94b414361",
+      label: "LinkedIn",
+      color: "hover:text-neon-blue",
+    },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter", color: "hover:text-neon-blue" },
     { icon: Mail, href: "mailto:hello@example.com", label: "Email", color: "hover:text-primary" },
   ];
@@ -34,22 +39,18 @@ export function ContactSection() {
             CONTACT
             <span className="text-accent">/&gt;</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">🏋️</p>
+          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">// Let's train together 🏋️</p>
         </ScrollReveal>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <ScrollReveal direction="left">
             <form onSubmit={handleSubmit} className="pixel-card">
-              <h3 className="font-pixel text-sm mb-6 text-primary">
-                SEND_MESSAGE.exe
-              </h3>
+              <h3 className="font-pixel text-sm mb-6 text-primary">SEND_MESSAGE.exe</h3>
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm mb-2 font-medium">
-                    Name *
-                  </label>
+                  <label className="block text-sm mb-2 font-medium">Name *</label>
                   <input
                     type="text"
                     required
@@ -61,9 +62,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2 font-medium">
-                    Email *
-                  </label>
+                  <label className="block text-sm mb-2 font-medium">Email *</label>
                   <input
                     type="email"
                     required
@@ -75,9 +74,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2 font-medium">
-                    Message *
-                  </label>
+                  <label className="block text-sm mb-2 font-medium">Message *</label>
                   <textarea
                     required
                     rows={4}
@@ -104,13 +101,11 @@ export function ContactSection() {
           {/* Contact Info */}
           <ScrollReveal direction="right">
             <div className="pixel-card h-full flex flex-col">
-              <h3 className="font-pixel text-sm mb-6 text-accent">
-                CONNECT.exe
-              </h3>
+              <h3 className="font-pixel text-sm mb-6 text-accent">CONNECT.exe</h3>
 
               <p className="text-muted-foreground mb-8">
-                Ready to team up? Whether you have a project in mind, want to discuss 
-                opportunities, or just want to say hi – I'm always down for a good conversation!
+                Ready to team up? Whether you have a project in mind, want to discuss opportunities, or just want to say
+                hi – I'm always down for a good conversation!
               </p>
 
               <div className="space-y-4 mb-8">
@@ -125,24 +120,11 @@ export function ContactSection() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="p-2 bg-neon-blue/10 text-neon-blue">
-                    <Linkedin className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">LinkedIn</p>
-                    <a href="https://www.linkedin.com/in/youssef-abou-el-fetouh-94b414361" target="_blank" rel="noopener noreferrer" className="hover:text-neon-blue transition-colors">
-                      linkedin.com/in/youssef-abou-el-fetouh
-                    </a>
-                  </div>
-                </div>
               </div>
 
               {/* Social Links */}
               <div className="mt-auto">
-                <p className="font-pixel text-xs mb-4 text-muted-foreground">
-                  // Find me on:
-                </p>
+                <p className="font-pixel text-xs mb-4 text-muted-foreground">// Find me on:</p>
                 <div className="flex gap-3">
                   {socialLinks.map((social) => (
                     <motion.a
@@ -168,12 +150,8 @@ export function ContactSection() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
               >
-                <p className="font-pixel text-xs text-primary">
-                  💪 Current Status:
-                </p>
-                <p className="text-sm mt-1">
-                  Open to new opportunities and collaborations!
-                </p>
+                <p className="font-pixel text-xs text-primary">💪 Current Status:</p>
+                <p className="text-sm mt-1">Open to new opportunities and collaborations!</p>
               </motion.div>
             </div>
           </ScrollReveal>
