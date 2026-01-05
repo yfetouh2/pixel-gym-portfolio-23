@@ -26,7 +26,6 @@ export function ContactSection() {
       label: "LinkedIn",
       color: "hover:text-neon-blue",
     },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter", color: "hover:text-neon-blue" },
     { icon: Mail, href: "mailto:hello@example.com", label: "Email", color: "hover:text-primary" },
   ];
 
