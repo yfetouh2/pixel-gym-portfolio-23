@@ -131,8 +131,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">LinkedIn</p>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-neon-blue transition-colors">
-                      linkedin.com/in/yourprofile
+                    <a href="https://www.linkedin.com/in/youssef-abou-el-fetouh-94b414361" target="_blank" rel="noopener noreferrer" className="hover:text-neon-blue transition-colors">
+                      linkedin.com/in/youssef-abou-el-fetouh
                     </a>
                   </div>
                 </div>
