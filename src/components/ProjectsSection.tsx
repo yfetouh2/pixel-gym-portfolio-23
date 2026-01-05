@@ -18,6 +18,13 @@ import quickcash4 from "@/assets/quickcash-4.png";
 import quickcash5 from "@/assets/quickcash-5.png";
 import quickcash6 from "@/assets/quickcash-6.png";
 
+// Star Wars screenshots
+import starwars1 from "@/assets/starwars-1.png";
+import starwars2 from "@/assets/starwars-2.png";
+import starwars3 from "@/assets/starwars-3.png";
+import starwars4 from "@/assets/starwars-4.png";
+import starwars5 from "@/assets/starwars-5.png";
+
 interface Project {
   title: string;
   description: string;
@@ -59,6 +66,7 @@ const projects: Project[] = [
     image: "🎮",
     tech: ["TypeScript", "Canvas API", "Web Audio"],
     github: "#",
+    images: [starwars1, starwars2, starwars3, starwars4, starwars5],
   },
   {
     title: "DevDash",
