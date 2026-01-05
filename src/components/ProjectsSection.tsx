@@ -2,12 +2,7 @@ import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogDescription,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogDescription } from "@/components/ui/dialog";
 
 // FitnessHub screenshots
 import fitnesshub1 from "@/assets/fitnesshub-1.png";
@@ -39,8 +34,9 @@ const projects: Project[] = [
     images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
   {
-    title: "CodeArena",
-    description: "Real-time competitive coding platform with live battles, leaderboards, and skill-based matchmaking.",
+    title: "QuickCash",
+    description:
+      "mobile application as a team for users to find small paid work in their local area. The application allows users to sign in as an employer or employee. The application include several key factors like being able to identify the local area of the user (Google Map API) and integrating an online payment system (PayPal)",
     image: "⚔️",
     tech: ["Next.js", "WebSocket", "MongoDB", "Docker"],
     github: "#",
@@ -159,17 +155,13 @@ export function ProjectsSection() {
 
   const nextImage = () => {
     if (selectedProject?.images) {
-      setCurrentImageIndex((prev) => 
-        prev === selectedProject.images!.length - 1 ? 0 : prev + 1
-      );
+      setCurrentImageIndex((prev) => (prev === selectedProject.images!.length - 1 ? 0 : prev + 1));
     }
   };
 
   const prevImage = () => {
     if (selectedProject?.images) {
-      setCurrentImageIndex((prev) => 
-        prev === 0 ? selectedProject.images!.length - 1 : prev - 1
-      );
+      setCurrentImageIndex((prev) => (prev === 0 ? selectedProject.images!.length - 1 : prev - 1));
     }
   };
 
@@ -230,7 +222,7 @@ export function ProjectsSection() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.2 }}
               />
-              
+
               {/* Navigation Arrows */}
               <button
                 onClick={prevImage}
@@ -244,7 +236,7 @@ export function ProjectsSection() {
               >
                 <ChevronRight className="h-5 w-5" />
               </button>
-              
+
               {/* Dots indicator */}
               <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
                 {selectedProject.images.map((_, idx) => (
@@ -259,11 +251,9 @@ export function ProjectsSection() {
               </div>
             </div>
           )}
-          
+
           <DialogHeader className="mt-auto pt-4 border-t border-border">
-            <DialogDescription className="text-muted-foreground">
-              {selectedProject?.description}
-            </DialogDescription>
+            <DialogDescription className="text-muted-foreground">{selectedProject?.description}</DialogDescription>
           </DialogHeader>
         </DialogContent>
       </Dialog>
