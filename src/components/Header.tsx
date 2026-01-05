@@ -43,7 +43,7 @@ export function Header() {
             <Github className="h-5 w-5" />
           </motion.a>
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/youssef-abou-el-fetouh-94b414361"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 hover:text-primary transition-colors"
