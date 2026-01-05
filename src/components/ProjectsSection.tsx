@@ -186,7 +186,7 @@ export function ProjectsSection() {
         <ScrollReveal delay={0.3}>
           <div className="text-center mt-12">
             <motion.a
-              href="https://github.com"
+              href="https://github.com/yfetouh2"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 pixel-btn bg-card border-2 border-foreground"
