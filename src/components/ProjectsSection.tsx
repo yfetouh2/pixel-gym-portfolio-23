@@ -41,7 +41,7 @@ const projects: Project[] = [
     title: "FitnessHub",
     description:
       "A comprehensive fitness tracking app with workout planning, food logging tracker, and TDEE Calculator (Total Daily Energy Expenditure).",
-    image: "🏋️",
+    image: fitnesshub1,
     tech: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
     github: "#",
     live: "#",
@@ -52,7 +52,7 @@ const projects: Project[] = [
     title: "QuickCash",
     description:
       "mobile application as a team for users to find small paid work in their local area. The application allows users to sign in as an employer or employee. The application include several key factors like being able to identify the local area of the user (Google Map API) and integrating an online payment system (PayPal)",
-    image: "⚔️",
+    image: quickcash1,
     tech: ["Next.js", "WebSocket", "MongoDB", "Docker"],
     github: "#",
     live: "#",
@@ -63,7 +63,7 @@ const projects: Project[] = [
     title: "Star Wars Social Networking Website",
     description:
       "As a Star Wars fan, I was inspired to build a simple social networking website that allows users to connect and share their interests within a Star Wars–themed environment",
-    image: "🎮",
+    image: starwars1,
     tech: ["TypeScript", "Canvas API", "Web Audio"],
     github: "#",
     images: [starwars1, starwars2, starwars3, starwars4, starwars5],
@@ -81,8 +81,14 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
       onClick={onClick}
       className={`pixel-card group cursor-pointer ${project.featured ? "md:col-span-2 lg:col-span-1" : ""}`}
     >
-      {/* Project Icon/Image */}
-      <div className="text-6xl mb-4 transition-transform group-hover:scale-110">{project.image}</div>
+      {/* Project Thumbnail */}
+      <div className="mb-4 overflow-hidden rounded-lg aspect-video">
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className="w-full h-full object-cover transition-transform group-hover:scale-110"
+        />
+      </div>
 
       {/* Featured badge */}
       {project.featured && (
