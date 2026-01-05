@@ -19,7 +19,7 @@ export function ContactSection() {
   };
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-foreground" },
+    { icon: Github, href: "https://github.com/yfetouh2", label: "GitHub", color: "hover:text-foreground" },
     {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/youssef-abou-el-fetouh-94b414361",

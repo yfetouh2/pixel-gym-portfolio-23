@@ -34,7 +34,7 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           <motion.a
-            href="https://github.com"
+            href="https://github.com/yfetouh2"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 hover:text-primary transition-colors"
