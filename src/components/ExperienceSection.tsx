@@ -65,7 +65,7 @@ export function ExperienceSection() {
             EXPERIENCE
             <span className="text-accent">/&gt;</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">// Career gains timeline 📈</p>
+          <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">📈</p>
         </ScrollReveal>
 
         <div className="relative">
