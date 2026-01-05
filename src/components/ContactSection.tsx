@@ -22,7 +22,7 @@ export function ContactSection() {
     { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-foreground" },
     {
       icon: Linkedin,
-      href: "www.linkedin.com/in/youssef-abou-el-fetouh-94b414361",
+      href: "https://www.linkedin.com/in/youssef-abou-el-fetouh-94b414361",
       label: "LinkedIn",
       color: "hover:text-neon-blue",
     },
