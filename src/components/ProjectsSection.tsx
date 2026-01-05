@@ -64,7 +64,7 @@ const projects: Project[] = [
     description:
       "As a Star Wars fan, I was inspired to build a simple social networking website that allows users to connect and share their interests within a Star Wars–themed environment",
     image: "⭐",
-    tech: ["TypeScript", "Canvas API", "Web Audio"],
+    tech: ["Visual Studio Code", "HTML", "CSS", "JavaScript"],
     github: "#",
     images: [starwars1, starwars2, starwars3, starwars4, starwars5],
   },
