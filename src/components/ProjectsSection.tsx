@@ -10,6 +10,14 @@ import fitnesshub2 from "@/assets/fitnesshub-2.png";
 import fitnesshub3 from "@/assets/fitnesshub-3.png";
 import fitnesshub4 from "@/assets/fitnesshub-4.png";
 
+// QuickCash screenshots
+import quickcash1 from "@/assets/quickcash-1.png";
+import quickcash2 from "@/assets/quickcash-2.png";
+import quickcash3 from "@/assets/quickcash-3.png";
+import quickcash4 from "@/assets/quickcash-4.png";
+import quickcash5 from "@/assets/quickcash-5.png";
+import quickcash6 from "@/assets/quickcash-6.png";
+
 interface Project {
   title: string;
   description: string;
@@ -42,6 +50,7 @@ const projects: Project[] = [
     github: "#",
     live: "#",
     featured: true,
+    images: [quickcash6, quickcash5, quickcash4, quickcash3, quickcash2, quickcash1],
   },
   {
     title: "PixelQuest",
