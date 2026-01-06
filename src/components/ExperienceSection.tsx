@@ -102,24 +102,13 @@ export function ExperienceSection() {
                 <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
                 <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
 
-                <motion.div
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                >
-                  <div>
-                    <motion.div
-                      animate={{ y: [0, -8, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                    >
-                      <img
-                        src={exp.logo}
-                        alt={exp.company}
-                        style={{ width: 100, height: 100, position: "absolute", top: "-100px", right: "-5px" }}
-                      />
-                    </motion.div>
-                  </div>
-                </motion.div>
+                <div>
+                  <img
+                    src={exp.logo}
+                    alt={exp.company}
+                    style={{ width: 100, height: 100, position: "absolute", top: "-100px", right: "-5px" }}
+                  />
+                </div>
 
                 {/* Achievements */}
                 <ul className="space-y-2 mb-4">
