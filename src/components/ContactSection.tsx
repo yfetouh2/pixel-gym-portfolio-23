@@ -38,7 +38,7 @@ export function ContactSection() {
           {/* Contact Form */}
           <ScrollReveal direction="left">
             <form onSubmit={handleSubmit} className="pixel-card">
-              <h3 className="font-pixel text-sm mb-6 text-primary">SEND_MESSAGE.exe</h3>
+              <h3 className="font-pixel text-sm mb-6 text-primary">SEND MESSAGE</h3>
 
               <div className="space-y-4">
                 <div>
