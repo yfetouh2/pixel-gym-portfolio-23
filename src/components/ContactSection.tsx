@@ -93,7 +93,7 @@ export function ContactSection() {
           {/* Contact Info */}
           <ScrollReveal direction="right">
             <div className="pixel-card h-full flex flex-col">
-              <h3 className="font-pixel text-sm mb-6 text-accent">CONNECT.exe</h3>
+              <h3 className="font-pixel text-sm mb-6 text-accent">CONNECT</h3>
 
               <p className="text-muted-foreground mb-8">
                 Ready to team up? Whether you have a project in mind, want to discuss opportunities, or just want to say
