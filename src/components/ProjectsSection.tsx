@@ -181,21 +181,6 @@ export function ProjectsSection() {
             />
           ))}
         </div>
-
-        <ScrollReveal delay={0.3}>
-          <div className="text-center mt-12">
-            <motion.a
-              href="https://github.com/yfetouh2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 pixel-btn bg-card border-2 border-foreground"
-              whileHover={{ scale: 1.02 }}
-            >
-              <Github className="h-4 w-4" />
-              VIEW ALL ON GITHUB
-            </motion.a>
-          </div>
-        </ScrollReveal>
       </div>
 
       {/* Project Modal */}
