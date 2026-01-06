@@ -13,28 +13,6 @@ export function HeroSection() {
       />
       <div className="absolute inset-0 bg-background/40" />
 
-      {/* Floating decorative elements */}
-      <motion.div
-        className="absolute top-1/4 left-10 text-6xl opacity-20"
-        animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
-        transition={{ duration: 4, repeat: Infinity }}
-      >
-        🏋️
-      </motion.div>
-      <motion.div
-        className="absolute bottom-1/4 right-10 text-6xl opacity-20"
-        animate={{ y: [0, 20, 0], rotate: [0, -10, 0] }}
-        transition={{ duration: 5, repeat: Infinity }}
-      >
-        💪
-      </motion.div>
-      <motion.div
-        className="absolute top-1/3 right-1/4 text-4xl opacity-20"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 3, repeat: Infinity }}
-      >
-        🔥
-      </motion.div>
 
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Text Content */}
@@ -47,7 +25,7 @@ export function HeroSection() {
           <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow text-foreground">
             HI! I'M YOUSSEF
             <br />
-            ABOU EL FETOUH 💪
+            ABOU EL FETOUH
           </h1>
 
 
