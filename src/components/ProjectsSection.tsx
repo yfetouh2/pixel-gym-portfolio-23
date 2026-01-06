@@ -50,7 +50,7 @@ const projects: Project[] = [
   {
     title: "QuickCash",
     description:
-      " A Mobile application created by 6 group members designed for users to find small paid work in their local area. The application allows users to sign in as an employer or employee. The application include several key factors like being able to identify the local area of the user (Google Map API) and integrating an online payment system (PayPal)",
+      "A Mobile application created by 6 group members designed for users to find small paid work in their local area. The application allows users to sign in as an employer or employee. The application include several key factors like being able to identify the local area of the user (Google Map API) and integrating an online payment system (PayPal)",
     image: "💵",
     tech: ["Java", "Android Studio", "XML"],
     github: "https://github.com/yfetouh2/QuickCash",
