@@ -44,7 +44,6 @@ const projects: Project[] = [
     image: "🏋️",
     tech: ["Android Studio", "Kotlin", "Jetpack Compose UI", "XML"],
     github: "https://github.com/yfetouh2/FitnessMVP",
-    live: "#",
     featured: true,
     images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
@@ -55,7 +54,7 @@ const projects: Project[] = [
     image: "💵",
     tech: ["Java", "Android Studio", "XML"],
     github: "https://github.com/yfetouh2/QuickCash",
-    live: "#",
+    
     featured: true,
     images: [quickcash6, quickcash5, quickcash4, quickcash3, quickcash2, quickcash1],
   },
