@@ -45,7 +45,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow text-foreground">
-            YOUSSEF
+            HI! I'M YOUSSEF
             <br />
             ABOU EL FETOUH 💪
           </h1>
