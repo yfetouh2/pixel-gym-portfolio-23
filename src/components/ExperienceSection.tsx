@@ -68,32 +68,28 @@ export function ExperienceSection() {
           <p className="text-center text-muted-foreground mb-16 font-pixel text-xs">📈</p>
         </ScrollReveal>
 
-        <div className="relative">
+        <div className="relative max-w-2xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-border md:-translate-x-1/2" />
+          <div className="absolute left-4 top-0 bottom-0 w-1 bg-border" />
 
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.company}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className={`relative mb-12 md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:ml-auto md:pl-12"}`}
+              className="relative mb-12 pl-12"
             >
               {/* Timeline dot */}
               <motion.div
-                className="absolute left-0 md:left-auto top-0 w-4 h-4 bg-primary border-4 border-background md:-translate-x-1/2"
-                style={{
-                  [index % 2 === 0 ? "right" : "left"]: "-8px",
-                  ...(index % 2 !== 0 && { left: "-8px" }),
-                }}
+                className="absolute left-2 top-0 w-4 h-4 bg-primary border-4 border-background"
                 whileInView={{ scale: [0, 1.2, 1] }}
                 viewport={{ once: true }}
               />
 
               {/* Content card */}
-              <div className="pixel-card ml-8 md:ml-0">
+              <div className="pixel-card">
                 {/* Period badge */}
                 <div className="inline-block mb-3 px-3 py-1 bg-primary/10 text-primary font-pixel text-[10px] border border-primary/30">
                   {exp.period}
