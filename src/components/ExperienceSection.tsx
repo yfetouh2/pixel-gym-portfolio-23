@@ -89,22 +89,21 @@ export function ExperienceSection() {
               />
 
               {/* Content card */}
-              <div className="pixel-card">
+              <div className="pixel-card relative">
+                {/* Logo */}
+                <img
+                  src={exp.logo}
+                  alt={exp.company}
+                  className="absolute top-4 right-4 w-16 h-16 object-contain"
+                />
+
                 {/* Period badge */}
                 <div className="inline-block mb-3 px-3 py-1 bg-primary/10 text-primary font-pixel text-[10px] border border-primary/30">
                   {exp.period}
                 </div>
 
-                <h3 className="font-pixel text-sm text-primary mb-1">{exp.role}</h3>
+                <h3 className="font-pixel text-sm text-primary mb-1 pr-20">{exp.role}</h3>
                 <p className="text-muted-foreground font-semibold mb-3">@ {exp.company}</p>
-
-                <div>
-                  <img
-                    src={exp.logo}
-                    alt={exp.company}
-                    style={{ width: 100, height: 100, position: "absolute", top: "-100px", right: "-5px" }}
-                  />
-                </div>
 
                 {/* Achievements */}
                 <ul className="space-y-2 mb-4">
