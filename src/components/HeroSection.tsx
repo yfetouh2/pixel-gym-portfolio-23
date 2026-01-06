@@ -79,14 +79,6 @@ export function HeroSection() {
             >
               <img src={profilePhoto} alt="Profile photo" className="w-full h-full object-cover" />
             </motion.div>
-            {/* Rep Badge */}
-            <motion.div
-              className="absolute -top-4 -right-4 bg-gym-gold text-foreground font-pixel text-xs px-3 py-2 pixel-border"
-              animate={{ rotate: [0, 5, -5, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              PRO 💪
-            </motion.div>
           </div>
         </motion.div>
       </div>
