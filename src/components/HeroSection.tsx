@@ -50,16 +50,6 @@ export function HeroSection() {
             ABOU EL FETOUH 💪
           </h1>
 
-          <div className="mb-8 overflow-hidden">
-            <motion.p
-              className="text-lg sm:text-xl text-muted-foreground font-mono"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              Full-Stack Developer | Problem Solver | Code Athlete
-            </motion.p>
-          </div>
 
         </motion.div>
 
