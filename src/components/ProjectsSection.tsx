@@ -47,7 +47,6 @@ const projects: Project[] = [
     featured: true,
     images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
-
   {
     title: "TikitakaLeague",
     description:
