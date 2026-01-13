@@ -54,7 +54,7 @@ const projects: Project[] = [
     image: "💵",
     tech: ["Java", "Android Studio", "XML"],
     github: "https://github.com/yfetouh2/QuickCash",
-    
+
     featured: true,
     images: [quickcash6, quickcash5, quickcash4, quickcash3, quickcash2, quickcash1],
   },
@@ -66,6 +66,16 @@ const projects: Project[] = [
     tech: ["Visual Studio Code", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/yfetouh2/Star-Wars-Social-networking-Website-",
     images: [starwars1, starwars2, starwars3, starwars4, starwars5],
+  },
+  {
+    title: "FitnessHub",
+    description:
+      "A comprehensive fitness tracking app with workout planning, food logging tracker, and TDEE Calculator (Total Daily Energy Expenditure).",
+    image: "🏋️",
+    tech: ["Android Studio", "Kotlin", "Jetpack Compose UI", "XML"],
+    github: "https://github.com/yfetouh2/FitnessMVP",
+    featured: true,
+    images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
 ];
 
