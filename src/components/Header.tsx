@@ -10,7 +10,8 @@ export function Header() {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border"
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-center">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="w-[120px]" />
 
         <nav className="hidden md:flex items-center gap-6">
           {["About", "Projects", "Experience", "Contact"].map((item) => (
