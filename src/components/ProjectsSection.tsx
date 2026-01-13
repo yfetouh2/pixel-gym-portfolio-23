@@ -38,6 +38,17 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "FitnessHub",
+    description:
+      "A comprehensive fitness tracking app with workout planning, food logging tracker, and TDEE Calculator (Total Daily Energy Expenditure).",
+    image: "🏋️",
+    tech: ["Android Studio", "Kotlin", "Jetpack Compose UI", "XML"],
+    github: "https://github.com/yfetouh2/FitnessMVP",
+    featured: true,
+    images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
+  },
+
+  {
     title: "TikitakaLeague",
     description:
       "TikiTaka League is a social sports management app designed for players who love to play regularly. Create groups, schedule matches, manage attendance, and never miss a game again.",
@@ -48,16 +59,6 @@ const projects: Project[] = [
     images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
 
-  {
-    title: "FitnessHub",
-    description:
-      "A comprehensive fitness tracking app with workout planning, food logging tracker, and TDEE Calculator (Total Daily Energy Expenditure).",
-    image: "🏋️",
-    tech: ["Android Studio", "Kotlin", "Jetpack Compose UI", "XML"],
-    github: "https://github.com/yfetouh2/FitnessMVP",
-    featured: true,
-    images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
-  },
   {
     title: "QuickCash",
     description:
