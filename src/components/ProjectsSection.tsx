@@ -64,7 +64,7 @@ const projects: Project[] = [
     tech: ["Android Studio", "Java", "Firebase", "XML"],
     github: "https://github.com/yfetouh2/TikitakaLeague",
     featured: true,
-    images: [tikitaka1, tikitaka2, tikitaka3, tikitaka4, tikitaka5, tikitaka6, tikitaka7],
+    images: [tikitaka7, tikitaka6, tikitaka5, tikitaka4, tikitaka3, tikitaka2, tikitaka1],
   },
 
   {
