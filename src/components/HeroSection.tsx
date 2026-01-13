@@ -22,7 +22,7 @@ export function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-pixel text-2xl sm:text-3xl lg:text-4xl mb-6 leading-relaxed pixel-text-shadow text-foreground">
+          <h1 className="font-pixel text-xl sm:text-2xl lg:text-3xl mb-6 leading-relaxed pixel-text-shadow text-foreground">
             HI! I'M YOUSSEF
             <br />
             ABOU EL FETOUH
