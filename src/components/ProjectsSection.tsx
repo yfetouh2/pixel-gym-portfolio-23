@@ -41,7 +41,7 @@ const projects: Project[] = [
     title: "TikitakaLeague",
     description:
       "TikiTaka League is a social sports management app designed for players who love to play regularly. Create groups, schedule matches, manage attendance, and never miss a game again.",
-    image: "🏋️",
+    image: "⚽",
     tech: ["Android Studio", "Java", "Firebase", "XML"],
     github: "https://github.com/yfetouh2/FitnessMVP",
     featured: true,
