@@ -10,6 +10,15 @@ import fitnesshub2 from "@/assets/fitnesshub-2.png";
 import fitnesshub3 from "@/assets/fitnesshub-3.png";
 import fitnesshub4 from "@/assets/fitnesshub-4.png";
 
+// TikitakaLeague screenshots
+import tikitaka1 from "@/assets/tikitaka-1.png";
+import tikitaka2 from "@/assets/tikitaka-2.png";
+import tikitaka3 from "@/assets/tikitaka-3.png";
+import tikitaka4 from "@/assets/tikitaka-4.png";
+import tikitaka5 from "@/assets/tikitaka-5.png";
+import tikitaka6 from "@/assets/tikitaka-6.png";
+import tikitaka7 from "@/assets/tikitaka-7.png";
+
 // QuickCash screenshots
 import quickcash1 from "@/assets/quickcash-1.png";
 import quickcash2 from "@/assets/quickcash-2.png";
@@ -55,7 +64,7 @@ const projects: Project[] = [
     tech: ["Android Studio", "Java", "Firebase", "XML"],
     github: "https://github.com/yfetouh2/TikitakaLeague",
     featured: true,
-    images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
+    images: [tikitaka1, tikitaka2, tikitaka3, tikitaka4, tikitaka5, tikitaka6, tikitaka7],
   },
 
   {
