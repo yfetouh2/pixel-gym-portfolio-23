@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ThemeToggle } from "./ThemeToggle";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export function Header() {
   return (
@@ -45,7 +44,6 @@ export function Header() {
           >
             <Linkedin className="h-5 w-5" />
           </motion.a>
-          <ThemeToggle />
         </div>
       </div>
     </motion.header>
