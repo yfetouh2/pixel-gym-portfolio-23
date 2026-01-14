@@ -41,10 +41,6 @@ export function AboutSection() {
                 in building more.I treat coding like a workout routine – consistent and intense.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">
-                I believe in clean code, continuous improvement, and the power of
-                <span className="text-primary font-semibold"> caffeine + determination</span>.
-              </p>
             </div>
           </ScrollReveal>
         </div>
