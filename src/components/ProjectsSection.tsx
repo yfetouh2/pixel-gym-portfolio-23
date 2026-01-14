@@ -53,7 +53,7 @@ const projects: Project[] = [
     image: "🏋️",
     tech: ["Android Studio", "Kotlin", "Jetpack Compose UI", "XML"],
     github: "https://github.com/yfetouh2/FitnessMVP",
-    featured: true,
+    featured: false,
     images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
   },
   {
@@ -63,7 +63,7 @@ const projects: Project[] = [
     image: "⚽",
     tech: ["Android Studio", "Java", "Firebase", "XML"],
     github: "https://github.com/yfetouh2/TikitakaLeague",
-    featured: true,
+    featured: false,
     images: [tikitaka7, tikitaka6, tikitaka5, tikitaka4, tikitaka3, tikitaka2, tikitaka1],
   },
 
@@ -75,7 +75,7 @@ const projects: Project[] = [
     tech: ["Java", "Android Studio", "XML"],
     github: "https://github.com/yfetouh2/QuickCash",
 
-    featured: true,
+    featured: false,
     images: [quickcash6, quickcash5, quickcash4, quickcash3, quickcash2, quickcash1],
   },
   {
