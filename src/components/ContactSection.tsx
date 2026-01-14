@@ -19,7 +19,7 @@ export function ContactSection() {
   };
 
   const socialLinks = [
-    { icon: Mail, href: "mailto:hello@example.com", label: "Email", color: "hover:text-primary" },
+    { icon: Mail, href: "mailto:ayouyou22@hotmail.com", label: "Email", color: "hover:text-primary" },
   ];
 
   return (
@@ -107,8 +107,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <a href="mailto:hello@example.com" className="hover:text-primary transition-colors">
-                      hello@example.com
+                    <a href="mailto:ayouyou22@hotmail.com" className="hover:text-primary transition-colors">
+                      ayouyou22@hotmail.com
                     </a>
                   </div>
                 </div>
