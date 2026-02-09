@@ -34,6 +34,12 @@ import starwars3 from "@/assets/starwars-3.png";
 import starwars4 from "@/assets/starwars-4.png";
 import starwars5 from "@/assets/starwars-5.png";
 
+// Movie App screenshots
+import movie1 from "@/assets/movie-1.png";
+import movie2 from "@/assets/movie-2.png";
+import movie3 from "@/assets/movie-3.png";
+import movie4 from "@/assets/movie-4.png";
+
 interface Project {
   title: string;
   description: string;
@@ -55,6 +61,16 @@ const projects: Project[] = [
     github: "https://github.com/yfetouh2/FitnessMVP",
     featured: false,
     images: [fitnesshub1, fitnesshub2, fitnesshub3, fitnesshub4],
+  },
+  {
+    title: "Movie App",
+    description:
+      "A modern movie discovery app where users can browse trending films, search by title, and view detailed information like ratings, language and release date.",
+    image: "🎬",
+    tech: ["React", "TypeScript", "TMDB API", "Tailwind CSS"],
+    github: "https://github.com/yfetouh2/movie-app-repo",
+    featured: false,
+    images: [movie3, movie2, movie1, movie4],
   },
   {
     title: "TikitakaLeague",
