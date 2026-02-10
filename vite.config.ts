@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: process.env.BASE_URL || "/pixel-gym-portfolio-23/",
+  base:  "/pixel-gym-portfolio-23/",
   server: {
     host: "::",
     port: 8080,
